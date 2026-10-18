@@ -9,7 +9,7 @@ It is a static site (plain HTML, CSS and a little JavaScript), so GitHub Pages c
 ```
 index.html            All page content (About, Research, Projects, Talks, Writing, Contact)
 404.html              Page shown for broken links
-assets/css/style.css  Styles: navy, steel, bronze and cream palette; Montserrat + Lato fonts
+assets/css/style.css  Styles: navy, steel, bronze and cream palette; Source Serif 4 + Source Sans 3 fonts
 assets/js/main.js     Mobile menu and active nav link
 assets/img/           Photos and social-share image
 .nojekyll             Tells GitHub Pages to serve the files as they are
