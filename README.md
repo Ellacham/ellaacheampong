@@ -8,7 +8,7 @@ It is a static site (plain HTML, CSS and a little JavaScript), so GitHub Pages c
 
 ```
 index.html            All page content (About, Research, Projects, Speaking, Insights, Contact)
-assets/css/style.css  Styles and colour palette (navy, white, cool grays, one blue accent)
+assets/css/style.css  Styles: navy, steel, bronze and cream palette; Montserrat + Lato fonts
 assets/js/main.js     Mobile menu, active nav link, scroll reveal
 assets/img/           Photos and social-share image
 .nojekyll             Tells GitHub Pages to serve the files as they are
