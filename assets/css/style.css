@@ -87,7 +87,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .nav { height: var(--header-h); display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--text-on-ink); }
-.brand img { width: 40px; height: 40px; }
 .brand-name {
   font-family: var(--font-display); font-size: 21px; font-weight: 600;
   letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap;
@@ -127,7 +126,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 @media (max-width: 420px) {
   .brand-name { font-size: 17px; letter-spacing: 0.04em; }
-  .brand img { width: 34px; height: 34px; }
 }
 
 /* ---------- Hero ---------- */
@@ -206,16 +204,11 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   content: ""; position: absolute; inset: 0;
   background: linear-gradient(180deg, transparent 60%, rgba(15, 30, 54, 0.35));
 }
-.hero-badge {
-  position: absolute; left: -36px; bottom: 40px; width: 96px; height: 96px;
-  filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.5));
-}
 
 @media (max-width: 900px) {
   .hero-inner { grid-template-columns: 1fr; gap: 56px; }
   .hero-photo { justify-self: start; width: min(calc(100% - 14px), 420px); }
   .hero-photo::before { inset: 14px -14px -14px 14px; }
-  .hero-badge { left: -10px; bottom: 24px; width: 72px; height: 72px; }
 }
 
 /* ---------- Sections ---------- */
@@ -388,7 +381,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 /* Footer */
 .site-footer { background: #0b1628; color: var(--text-on-ink-soft); padding: 56px 0 40px; border-top: 1px solid var(--line-on-ink); }
 .footer-inner { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px; }
-.footer-logo { width: min(320px, 80%); opacity: .95; }
+.footer-name { font-family: var(--font-display); font-size: 26px !important; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-on-ink); }
 .footer-inner p { font-size: 14px; }
 .copyright { color: rgba(169, 182, 200, 0.75); }
 
