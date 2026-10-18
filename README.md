@@ -7,16 +7,19 @@ It is a static site (plain HTML, CSS and a little JavaScript), so GitHub Pages c
 ## Structure
 
 ```
-index.html            All page content (About, Research, Projects, Speaking, Insights, Contact)
+index.html            All page content (About, Research, Projects, Talks, Writing, Contact)
+404.html              Page shown for broken links
 assets/css/style.css  Styles: navy, steel, bronze and cream palette; Montserrat + Lato fonts
-assets/js/main.js     Mobile menu, active nav link, scroll reveal
+assets/js/main.js     Mobile menu and active nav link
 assets/img/           Photos and social-share image
 .nojekyll             Tells GitHub Pages to serve the files as they are
 ```
 
 ## Editing content
 
-Everything visible on the site lives in `index.html`. Each section is marked with a comment (`<!-- Projects -->`, `<!-- Speaking -->`, …). To add a talk, project or post, copy an existing `<li>` or `<article>` block in that section and change the text.
+Everything visible on the site lives in `index.html`. Each section has an id (`about`, `research`, `projects`, `talks`, `writing`, `contact`). To add a talk, project or note, copy an existing `<li>` or `<article>` block in that section and change the text.
+
+When you change `assets/css/style.css`, bump the `?v=` number on its `<link>` in `index.html` so browsers fetch the new styles right away.
 
 ## Publishing with GitHub Pages
 

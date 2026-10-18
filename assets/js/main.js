@@ -1,6 +1,4 @@
 (function () {
-  document.documentElement.classList.add("js");
-
   var header = document.querySelector(".site-header");
   var toggle = document.querySelector(".nav-toggle");
   var menu = document.getElementById("nav-menu");
@@ -29,7 +27,7 @@
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
 
-  // Highlight the nav link for the section in view
+  // Underline the nav link for the section in view
   var links = Array.prototype.slice.call(menu.querySelectorAll('a[href^="#"]'));
   var sections = links
     .map(function (a) { return document.querySelector(a.getAttribute("href")); })
@@ -45,19 +43,6 @@
       });
     }, { rootMargin: "-45% 0px -50% 0px" });
     sections.forEach(function (s) { navObserver.observe(s); });
-
-    // Gentle reveal on scroll
-    var revealObserver = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, { rootMargin: "0px 0px -8% 0px" });
-    document.querySelectorAll(".reveal").forEach(function (el) { revealObserver.observe(el); });
-  } else {
-    document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("is-visible"); });
   }
 
   document.getElementById("year").textContent = new Date().getFullYear();
