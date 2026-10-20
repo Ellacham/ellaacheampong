@@ -7,19 +7,30 @@ It is a static site (plain HTML, CSS and a little JavaScript), so GitHub Pages c
 ## Structure
 
 ```
-index.html            All page content (About, Research, Projects, Talks, Writing, Contact)
-404.html              Page shown for broken links
-assets/css/style.css  Styles: navy, steel, bronze and cream palette; Source Serif 4 + Source Sans 3 fonts
-assets/js/main.js     Mobile menu and active nav link
-assets/img/           Photos and social-share image
-.nojekyll             Tells GitHub Pages to serve the files as they are
+index.html                     Homepage: About (bio, interests, education, honors, service), Research,
+                               Projects, Publications, Talks, Writing, Contact
+research/*.html                One overview page per study (linked from the Research cards)
+projects/fraudlens.html        FraudLens technical page
+assets/docs/                   Academic Resume PDF (opened by "Resume" and "Academic Resume")
+assets/css/style.css           Styles for every page: ink navy, royal blue, ice blue, warm gold; EB Garamond + Lato
+assets/js/main.js              Mobile menu and active nav link
+assets/img/                    Headshot, Brandeis photo, social-share image
+404.html                       Page shown for broken links
+.nojekyll                      Tells GitHub Pages to serve the files as they are
 ```
 
 ## Editing content
 
-Everything visible on the site lives in `index.html`. Each section has an id (`about`, `research`, `projects`, `talks`, `writing`, `contact`). To add a talk, project or note, copy an existing `<li>` or `<article>` block in that section and change the text.
+Homepage content lives in `index.html`; each section has an id (`about`, `research`, `projects`, `publications`, `talks`, `writing`, `contact`). Detail pages live in `research/` and `projects/`.
 
-When you change `assets/css/style.css`, bump the `?v=` number on its `<link>` in `index.html` so browsers fetch the new styles right away.
+Content rules from the site's design guide:
+
+- Status labels ("Ongoing Research", "Manuscript in Preparation", …) are not links. Use "Under Review" only once a manuscript is submitted, and "Published" only after publication.
+- Only add PDF, DOI, code, demo, slides, Google Scholar or other links once the real destination exists. No placeholder links.
+- The resume is always called "Academic Resume", never "Academic CV".
+- Writing entries link only to full articles.
+
+When you change `assets/css/style.css`, bump the `?v=` number on its `<link>` in every page so browsers fetch the new styles right away.
 
 ## Publishing with GitHub Pages
 
