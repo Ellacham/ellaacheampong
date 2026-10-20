@@ -16,6 +16,7 @@ assets/css/style.css           Styles for every page: ink navy, royal blue, ice 
 assets/js/main.js              Mobile menu and active nav link
 assets/img/                    Headshot, Brandeis photo, social-share image
 404.html                       Page shown for broken links
+sitemap.xml                    List of all pages, for Google Search Console
 .nojekyll                      Tells GitHub Pages to serve the files as they are
 ```
 
