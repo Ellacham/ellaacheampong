@@ -1,16 +1,17 @@
 /* Emmanuella Acheampong · portfolio styles
-   Palette: ink navy #14263F, royal blue #1B4FA3, ice blue #EEF4FC, warm gold #93641C (on light) / #E0B25A (on navy).
+   Palette: ink navy #14263F, royal blue #1E4A8C, ice blue #EEF4FC, steel blue #3F5F82 (labels on light),
+   warm gold #E0B25A (accents on navy only).
    Type: Source Serif 4 for headings, Source Sans 3 for reading text and controls.
    Shared by the homepage and the research / project detail pages. */
 
 :root {
   --ink: #14263F;
-  --royal: #1B4FA3;
-  --royal-dark: #153F84;
+  --royal: #1E4A8C;
+  --royal-dark: #173A6E;
+  --steel: #3F5F82;
   --ice: #EEF4FC;
   --ice-soft: #F5F8FD;
   --ice-border: #D6E2F2;
-  --gold: #93641C;
   --gold-bright: #E0B25A;
   --white: #FFFFFF;
 
@@ -75,10 +76,10 @@ h4 { font-size: 21px; font-weight: 600; text-wrap: pretty; }
 
 .container { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 var(--gutter); }
 
-/* Small gold uppercase labels (eyebrows, statuses) */
+/* Small uppercase labels (eyebrows, statuses) */
 .label, .status {
   font-family: var(--font-body); font-size: 14px; font-weight: 700;
-  letter-spacing: 0.06em; text-transform: uppercase; color: var(--gold);
+  letter-spacing: 0.06em; text-transform: uppercase; color: var(--steel);
 }
 
 /* ---------- Header ---------- */
@@ -203,8 +204,8 @@ h4 { font-size: 21px; font-weight: 600; text-wrap: pretty; }
 .timeline { display: grid; gap: 12px; max-width: 880px; }
 .timeline h4 { margin-top: 10px; }
 .year-chip {
-  display: inline-block; padding: 6px 12px; border-radius: 6px;
-  background: var(--royal); color: var(--white);
+  display: inline-block; padding: 4px 10px; border-radius: 6px;
+  background: var(--white); color: var(--royal); border: 1px solid var(--royal);
   font-size: 14px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
 }
 
@@ -222,7 +223,7 @@ h4 { font-size: 21px; font-weight: 600; text-wrap: pretty; }
 /* Service */
 .service-list { margin-top: 12px; display: grid; gap: 6px; max-width: 44em; }
 .service-list li { padding-left: 18px; position: relative; }
-.service-list li::before { content: ""; position: absolute; left: 0; top: 0.7em; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
+.service-list li::before { content: ""; position: absolute; left: 0; top: 0.7em; width: 6px; height: 6px; border-radius: 50%; background: var(--steel); }
 .service-list strong { color: var(--text-strong); }
 
 /* Research streams */
@@ -302,7 +303,7 @@ h4 { font-size: 21px; font-weight: 600; text-wrap: pretty; }
 .page-body h2:first-child { margin-top: 0; }
 .callout {
   margin-bottom: 22px; padding: 12px 18px; max-width: 46em;
-  background: var(--ice-soft); border-left: 4px solid var(--gold); border-radius: 6px;
+  background: var(--ice-soft); border-left: 4px solid var(--steel); border-radius: 6px;
   font-size: 17px; color: var(--text-strong);
 }
 .facts { display: grid; grid-template-columns: max-content 1fr; gap: 6px 28px; max-width: 46em; margin: 0 0 24px; }

@@ -12,7 +12,7 @@ index.html                     Homepage: About (bio, interests, education, honor
 research/*.html                One overview page per study (linked from the Research cards)
 projects/fraudlens.html        FraudLens technical page
 assets/docs/                   Academic Resume PDF (opened by "Resume" and "Academic Resume")
-assets/css/style.css           Styles for every page: ink navy, royal blue, ice blue, warm gold; Source Serif 4 + Source Sans 3
+assets/css/style.css           Styles for every page: ink navy, royal blue, ice blue, steel blue, warm gold (on navy only); Source Serif 4 + Source Sans 3
 assets/js/main.js              Mobile menu and active nav link
 assets/img/                    Headshot, Brandeis photo, social-share image
 404.html                       Page shown for broken links
