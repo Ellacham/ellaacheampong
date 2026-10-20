@@ -1,6 +1,6 @@
 /* Emmanuella Acheampong · portfolio styles
    Palette: ink navy #14263F, royal blue #1B4FA3, ice blue #EEF4FC, warm gold #93641C (on light) / #E0B25A (on navy).
-   Type: EB Garamond for headings, Lato for reading text and controls.
+   Type: Source Serif 4 for headings, Source Sans 3 for reading text and controls.
    Shared by the homepage and the research / project detail pages. */
 
 :root {
@@ -19,8 +19,8 @@
   --muted: #566B83;
   --on-ink: #DCE4EE;
 
-  --font-heading: "EB Garamond", Georgia, "Times New Roman", serif;
-  --font-body: "Lato", "Helvetica Neue", Arial, sans-serif;
+  --font-heading: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-body: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
 
   --container: 1120px;
   --gutter: clamp(16px, 4vw, 40px);
@@ -52,9 +52,9 @@ a { color: var(--royal); }
 p { margin: 0; }
 ul, ol { margin: 0; padding: 0; list-style: none; }
 h1, h2, h3, h4 { margin: 0; font-family: var(--font-heading); color: var(--text-strong); line-height: 1.15; text-wrap: balance; }
-h2 { font-size: clamp(34px, 3.8vw, 44px); font-weight: 600; margin-bottom: 18px; }
-h3 { font-size: 26px; font-weight: 600; }
-h4 { font-size: 24px; font-weight: 600; text-wrap: pretty; }
+h2 { font-size: clamp(30px, 3.3vw, 38px); font-weight: 600; margin-bottom: 18px; }
+h3 { font-size: 22px; font-weight: 600; }
+h4 { font-size: 21px; font-weight: 600; text-wrap: pretty; }
 
 :focus-visible { outline: 3px solid var(--royal); outline-offset: 3px; border-radius: 4px; }
 .site-header :focus-visible,
@@ -91,7 +91,7 @@ h4 { font-size: 24px; font-weight: 600; text-wrap: pretty; }
 .nav { height: var(--header-h); display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 
 .brand {
-  font-family: var(--font-heading); font-size: 22px; font-weight: 600;
+  font-family: var(--font-heading); font-size: 19px; font-weight: 600;
   letter-spacing: 0.04em; text-transform: uppercase; white-space: nowrap;
   color: var(--white); text-decoration: none;
 }
@@ -129,7 +129,7 @@ h4 { font-size: 24px; font-weight: 600; text-wrap: pretty; }
   .nav-menu a.is-active { box-shadow: none; color: var(--gold-bright); }
 }
 @media (max-width: 420px) {
-  .brand { font-size: 18px; letter-spacing: 0.02em; }
+  .brand { font-size: 16px; letter-spacing: 0.02em; }
 }
 
 /* ---------- Buttons and links ---------- */
@@ -154,8 +154,8 @@ h4 { font-size: 24px; font-weight: 600; text-wrap: pretty; }
 .hero { background: var(--ice); padding: clamp(48px, 7vw, 88px) 0; }
 .hero-inner { display: grid; grid-template-columns: 1fr 280px; gap: clamp(32px, 5vw, 64px); align-items: center; }
 .hero h1 {
-  margin-top: 18px; font-size: clamp(38px, 4.8vw, 58px); font-weight: 700; line-height: 1.08;
-  letter-spacing: -0.005em; max-width: 20ch;
+  margin-top: 18px; font-size: clamp(33px, 4.1vw, 50px); font-weight: 700; line-height: 1.12;
+  letter-spacing: -0.005em; max-width: 23ch;
 }
 .hero-lead { margin-top: 22px; font-size: clamp(19px, 1.8vw, 21px); line-height: 1.6; max-width: 40em; }
 .hero-actions { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 10px; }
@@ -184,7 +184,7 @@ h4 { font-size: 24px; font-weight: 600; text-wrap: pretty; }
 .prose p + p { margin-top: 16px; }
 
 .sub-label { margin: 48px 0 18px; }
-.block-title { margin: 56px 0 20px; font-size: 30px; }
+.block-title { margin: 56px 0 20px; font-size: 26px; }
 .small { font-size: 16px; color: var(--muted); }
 .note { margin-top: 28px; font-size: 17px; color: var(--muted); }
 
@@ -228,7 +228,7 @@ h4 { font-size: 24px; font-weight: 600; text-wrap: pretty; }
 /* Research streams */
 .streams { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
 .stream { display: grid; gap: 16px; align-content: start; }
-.stream-title { font-size: 30px; }
+.stream-title { font-size: 26px; }
 .stream-desc { color: var(--muted); margin-top: -8px; }
 .study { display: flex; flex-direction: column; }
 .study h4 { margin-top: 8px; }
@@ -236,7 +236,7 @@ h4 { font-size: 24px; font-weight: 600; text-wrap: pretty; }
 @media (max-width: 860px) { .streams { grid-template-columns: 1fr; gap: 40px; } }
 
 /* Projects */
-.featured h3 { margin-top: 8px; font-size: 32px; }
+.featured h3 { margin-top: 8px; font-size: 28px; }
 .featured > p:not(.label) { max-width: 52em; }
 .tags { margin: 20px 0 22px; display: flex; flex-wrap: wrap; gap: 8px 0; }
 .tags li { font-weight: 700; color: var(--text-strong); font-size: 17px; }
@@ -251,7 +251,7 @@ h4 { font-size: 24px; font-weight: 600; text-wrap: pretty; }
 .talks { border-top: 1px solid var(--ice-border); }
 .talk { display: grid; grid-template-columns: 120px 1fr; gap: 24px; padding: 22px 0; border-bottom: 1px solid var(--ice-border); }
 .talk-date { font-weight: 700; color: var(--royal); font-size: 16px; padding-top: 4px; }
-.talk h3 { font-size: 24px; }
+.talk h3 { font-size: 21px; }
 .talk-meta { margin-top: 4px; font-size: 16px; color: var(--muted); }
 .talk p:not(.talk-date):not(.talk-meta) { margin-top: 6px; }
 @media (max-width: 640px) { .talk { grid-template-columns: 1fr; gap: 4px; } }
@@ -295,11 +295,11 @@ h4 { font-size: 24px; font-weight: 600; text-wrap: pretty; }
 .page-hero { background: var(--ice); padding: clamp(36px, 6vw, 64px) 0 clamp(36px, 5vw, 56px); }
 .back-link { display: inline-block; margin-bottom: 24px; font-weight: 700; text-decoration: none; color: var(--royal); }
 .back-link:hover { text-decoration: underline; text-underline-offset: 3px; }
-.page-hero h1 { margin-top: 12px; font-size: clamp(36px, 4.4vw, 52px); font-weight: 700; line-height: 1.1; max-width: 30ch; text-wrap: pretty; }
+.page-hero h1 { margin-top: 12px; font-size: clamp(32px, 3.8vw, 45px); font-weight: 700; line-height: 1.1; max-width: 30ch; text-wrap: pretty; }
 .page-summary { margin-top: 18px; font-size: 20px; max-width: 40em; }
 .page-body { padding-top: clamp(40px, 6vw, 64px); padding-bottom: clamp(56px, 7vw, 88px); }
 .page-body .prose { max-width: 46em; }
-.page-body h2 { font-size: 30px; margin: 40px 0 12px; }
+.page-body h2 { font-size: 26px; margin: 40px 0 12px; }
 .page-body h2:first-child { margin-top: 0; }
 .callout {
   margin-bottom: 32px; padding: 16px 20px; max-width: 46em;
